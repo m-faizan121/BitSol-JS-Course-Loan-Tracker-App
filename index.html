@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Tracker</title>
+</head>
+<body>
+
+    <div class="header">
+        <div id="logo">
+            <img id="logo-img" src="images/logo.png" alt="logo">
+        </div>
+        <div id="title">
+            <h1>Loan Tracker</h1>
+        </div>
+        <div id="menu">
+            <list>
+                <a class="menu-item">About Us</a>
+                <a class="menu-item">Contact Us</a>
+            </list>
+            <div class="dropdown">
+                <button class="dropbtn">Account</button>
+                <div class="dropdown-content">
+                  <a href="#">Sign In</a>
+                  <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="clear">
+        Clear
+    </button>
+
+    <div class="container">
+
+        <div class="form">
+            <h2 style="color: white;">Add New Payment</h2>
+            <form>
+                <label><span style="color: red;">*</span> Customer Name </label> <br>
+                <input id="name" type = "text" size="50" placeholder="Enter Customer Name" required>
+                <label><span style="color: red;">*</span> Loan Amount </label> <br>
+                <input id="loan" style="width: 380px;" type = "number" size="50" placeholder="Enter Loan Amount"  min="1" required>
+                <label><span style="color: red;">*</span> Loan Date </label> <br><br>
+                <input id = "date" style="width: 380px;" type = "date" size="50" placeholder="Enter Loan Date" required>
+                <label><span style="color: red;">*</span> Loan Duration </label> <br><br>
+                <input id = "duration" style="width: 380px;" type = "number" size="50" placeholder="Enter Number of Months"  min="1" required>
+                <br><br>
+            </form>
+            <button class="submit">Submit</button>
+        </div>
+
+
+        <div class="customers">
+            <table class="customersData">
+                    
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
